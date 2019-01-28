@@ -10,5 +10,12 @@
     "default_popup": "html/popup.html",
     "default_title": "What am I doing!?",
     "default_icon": "images/akuma-icon.png"
-  }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://canvas.uchicago.edu/*"],
+      "js": ["scrips/content_canvas.js"]
+    }
+  ]
 }
